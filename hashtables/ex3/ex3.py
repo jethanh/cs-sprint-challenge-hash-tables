@@ -2,7 +2,7 @@ def intersection(arrays):
 
     dlist = []
     for i in arrays:
-        dlist.append({j: 0 for j in i})
+        dlist.append({j: True for j in i})
     
     result = dlist.pop()
 
