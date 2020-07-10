@@ -4,7 +4,7 @@ def get_indices_of_item_weights(weights, length, limit):
     # weights: {weight: index}
     for i in range(len(weights)):
         cache[weights[i]] = i
-    # find match
+    # find match to limit
     for i in range(len(weights)):
         equalToLimit = limit-weights[i]
         if equalToLimit in cache:

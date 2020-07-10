@@ -1,8 +1,13 @@
 def intersection(arrays):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+
+    dlist = []
+    for i in arrays:
+        dlist.append({j: 0 for j in i})
+    
+    result = dlist.pop()
+
+    for j in dlist:
+        result = list(result & j.keys())
 
     return result
 
